@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .label-mabel {
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+      .value-malue {
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+      <a class="navbar-brand" href="#">Home</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h1>Admin Dashboard</h1>
+
+      <div class="mt-4 border p-3">
+        <h2>Neues Skript hochladen</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="scriptName">Skript-Name</label>
+              <input type="text" class="form-control" id="scriptName" placeholder="Skript-Name" />
+            </div>
+            <div class="form-group">
+              <label for="scriptPrice">Skript-Preis</label>
+              <input type="text" class="form-control" id="scriptPrice" placeholder="Skript-Preis" />
+            </div>
+            <button class="btn btn-primary">Hochladen</button>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="fileUpload">Datei auswählen</label>
+              <input type="file" class="form-control-file" id="fileUpload" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h2>Vorhandene Skripte verwalten</h2>
+        <div class="row mb-3 border p-3">
+          <div class="col-md-3">
+            <p class="label-mabel">Skript Name</p>
+            <p class="value-malue">SkriptEins</p>
+          </div>
+          <div class="col-md-2">
+            <p class="label-mabel">Preis</p>
+            <p class="value-malue">300€</p>
+          </div>
+          <div class="col-md-2">
+            <p class="label-mabel">Verkauft</p>
+            <p class="value-malue">500</p>
+          </div>
+          <div class="col-md-5 text-right">
+            <button class="btn btn-primary">Bearbeiten</button>
+            <button class="btn btn-danger">Löschen</button>
+          </div>
+        </div>
+        <div class="row mb-3 border p-3">
+          <div class="col-md-3">
+            <p class="label-mabel">Skript Name</p>
+            <p class="value-malue">SkriptZwei</p>
+          </div>
+          <div class="col-md-2">
+            <p class="label-mabel">Preis</p>
+            <p class="value-malue">500€</p>
+          </div>
+          <div class="col-md-2">
+            <p class="label-mabel">Verkauft</p>
+            <p class="value-malue">100</p>
+          </div>
+          <div class="col-md-5 text-right">
+            <button class="btn btn-primary">Bearbeiten</button>
+            <button class="btn btn-danger">Löschen</button>
+          </div>
+        </div>
+        <div class="row mb-3 border p-3">
+          <div class="col-md-3">
+            <p class="label-mabel">Skript Name</p>
+            <p class="value-malue">SkriptDrei</p>
+          </div>
+          <div class="col-md-2">
+            <p class="label-mabel">Preis</p>
+            <p class="value-malue">10000€</p>
+          </div>
+          <div class="col-md-2">
+            <p class="label-mabel">Verkauft</p>
+            <p class="value-malue">69</p>
+          </div>
+          <div class="col-md-5 text-right">
+            <button class="btn btn-primary">Bearbeiten</button>
+            <button class="btn btn-danger">Löschen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("click", (e) => {
+        if (e.target.tagName === "BUTTON" || e.target.tagName === "A") {
+          alert("Dankeschön fürs Anschauen! Viele Grüße :)");
+          console.log("Button or link clicked");
+        }
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
